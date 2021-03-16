@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section{
+    position: absolute;
+    right: 0;
+    width:100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    
+}
+.banner.active{
+    right: 300px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo{
+    color: #fff;
+    text-transform: uppercase;
+   cursor: pointer;
+   letter-spacing: 2px;
+
+}
+.toggle{
+    
+    width: 60px;
+    height: 60px;
+    background: url(menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    
+}
+.toggle:hover{
+    transform: scale(1.2);
+}
+#myVideo {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+  }
+  .bg-img{
+      background: url(bg-img.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+    
+
+  }
+  .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to left,#00f,#f00);;
+      mix-blend-mode: overlay;
+      opacity: 0.5;
+  }
+  .text{
+      color: #fff;
+      position: relative;
+      z-index: 10;
+     text-shadow: 0 0 10px #000;/*0 0 10px #000,0 0 10px #000;*/
+     padding-top: 50px;
+  }
+  .text .ltext{
+      position: relative;
+      top: -60px;
+      font-size: 1.2em;
+      width: 60%;
+      text-align: ;
+      
+  }
+  .text #f1{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.text a{
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    color: #111;
+    text-shadow: none;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    left: 10%;
+    letter-spacing: 2px;
+
+}
+.text a:hover{
+    color: #fff;
+    text-shadow: none;
+    background: #111;
+    text-shadow: 0 0 5px#fff;
+    
+    
+}
+  
+ 
+  .text #f2{
+    font-size: 5rem;
+    font-weight: 900;
+    transform:rotate(180deg) ;
+    writing-mode: vertical-lr;
+  
+}
+ .text .f3{
+    font-size: 10rem;
+    margin-left: 0;
+    position: relative;
+    top: -60px;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #fff;
+
+}
+.menu ul{
+    position:relative;
+    
+
+}
+.menu ul li{
+    position:relative;
+    list-style: none;
+    text-align: center;
+
+
+
+}
+.menu ul li:hover{
+    transform: scale(1.2);
+    transition: 0.4s ease;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+    line-height: 4em;
+}
+.menu ul li a:hover{
+    background: -webkit-linear-gradient(180deg,#00f,#f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.toggle.active{
+    background: url(close.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    z-index: 10;
+}
+
+.divider{
+    width: 10%;
+    height: 300px;
+    background: #111;
+}
+.para{
+    position: relative;
+    left: 0;
+    z-index: 10;
+    color: #fff;
+}
+@media (max-width:720px){
+    section{
+        padding: 100px 0px 30px 20px;
+        }
+    
+    .text #f1{
+        font-size: 3.3rem;
+        
+    }
+    .text #f2{
+        font-size: 3.3rem;
+    }
+    .text .f3{
+        font-size: 7rem;
+    }
+    .text .ltext{
+        font-size: 0.8em;
+    }
+    header{
+        padding: 40px 10px 60px 10px;
+    }
+
+
+}
+@media (max-width:540px){
+    section{
+        padding: 100px 0px 90px 10p0x;
+        }
+    
+    .text #f1{
+        font-size: 3.5rem;
+        line-height: 8rem;
+        
+    }
+    .text #f2{
+        font-size: 2.5rem;
+    }
+    .text .f3{
+        font-size: 5rem;
+    }
+
+
+}

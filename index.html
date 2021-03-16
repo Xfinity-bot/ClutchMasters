@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="csgo-icon-42857-Windows.ico" type="image/x-icon" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clutch Masters</title>
+   
+    
+    
+    <link rel="stylesheet" href="/style1.css">
+</head>
+<body>
+    <div class="menu">
+        <ul onclick="toggleMenu()">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Register</a></li>
+            
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">Clutch Masters</h2>
+            <div class="toggle" onclick="toggleMenu()"></div>
+        </header>
+        <div class="bg-img"></div>
+        <!---<video autoplay muted loop id="myVideo">
+            <source src="Tunnel - 26475.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video> -->
+          <div class="overlay"></div>
+          <div class="overlay"></div>
+          <div class="overlay"></div>
+          <div class ="text">
+          <p><span id='f1'>Who</span><span id='f2'> Can</span></p>
+           <span class="f3">Clutch?</span>
+           <p class="ltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero repudiandae dolore dicta dignissimos voluptates ut quaerat, et tempore quidem quis dolorum rem earum minus repellat, nemo aspernatur, voluptatem cum!</p>
+           <a href="#">Register Now</a>
+          </div>
+         
+          
+    </section>
+    <script>
+        function toggleMenu(){
+            var menuToggle= document.querySelector('.toggle');
+            var banner= document.querySelector('.banner');
+            menuToggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+       
+        
+    </script>
+    
+</body>
+</html>
